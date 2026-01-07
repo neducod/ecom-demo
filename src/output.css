@@ -214,6 +214,9 @@
   .h-40 {
     height: calc(var(--spacing) * 40);
   }
+  .h-auto {
+    height: auto;
+  }
   .w-64 {
     width: calc(var(--spacing) * 64);
   }
@@ -225,6 +228,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .max-w-full {
+    max-width: 100%;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
