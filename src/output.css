@@ -241,8 +241,14 @@
   .h-auto {
     height: auto;
   }
+  .w-2 {
+    width: calc(var(--spacing) * 2);
+  }
   .w-20 {
     width: calc(var(--spacing) * 20);
+  }
+  .w-26 {
+    width: calc(var(--spacing) * 26);
   }
   .w-30 {
     width: calc(var(--spacing) * 30);
@@ -255,6 +261,12 @@
   }
   .w-40 {
     width: calc(var(--spacing) * 40);
+  }
+  .w-42 {
+    width: calc(var(--spacing) * 42);
+  }
+  .w-44 {
+    width: calc(var(--spacing) * 44);
   }
   .w-46 {
     width: calc(var(--spacing) * 46);
