@@ -217,6 +217,12 @@
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
+  .mb-28 {
+    margin-bottom: calc(var(--spacing) * 28);
+  }
   .block {
     display: block;
   }
@@ -509,6 +515,9 @@
   }
   .text-pink-200 {
     color: var(--color-pink-200);
+  }
+  .text-pink-300 {
+    color: var(--color-pink-300);
   }
   .text-white {
     color: var(--color-white);
