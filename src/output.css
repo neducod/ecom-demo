@@ -205,6 +205,9 @@
   .mx-4 {
     margin-inline: calc(var(--spacing) * 4);
   }
+  .mx-42 {
+    margin-inline: calc(var(--spacing) * 42);
+  }
   .-mt-2 {
     margin-top: calc(var(--spacing) * -2);
   }
