@@ -5,9 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link href="./output.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="./src/output.css">
+  <style>
+              .hero {
+            height: 100vh;
+            /* background: #ddd; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* font-size: 2rem; */
+        }
+        .section{
+            height: 100vh;
+            background: peachpuff;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* font-size: 2.5rem; */
+        }
+  </style>
 </head>
 <body>
-    <div class="w-auto bg-black flex justify-center items-center flex-col p-8 gap-1.5">
+    <div class="w-auto bg-black flex justify-center items-center flex-col p-8 gap-1.5 hero">
         <p class="text-pink-200">Glowé</p>
         <h1 class="text-white text-3xl text-center">Find the Right Skincare For Your Skin</h1>
         <p class="text-gray-200 text-center text-sm">Shop authentic skincare products from trusted local and international brands, all in one place.</p>
@@ -15,7 +34,7 @@
             <img src="src/assets/cream-lotion-image-skincare-the-max-stem-cell-facial-cleanser-cosmetics-bb-cream-7df9993bdc64a6499f61b6d0f535acc0.png" alt="hero-image" class="w-20 m-4">
         </div>
     </div>
-    <div>
+    <div class="section">
         <h2 class="text-black text-2xl text-center p-6">Popular Categories</h2>
         <div class="flex flex-col gap-6 p-4">
             <div class="flex flex-col shadow-[0px_0px_15px_rgba(0,0,0,0.09)] rounded-3xl px-6 py-8 sm:p-10 sm:pb-6 grid items-center justify-center w-full grid-cols-1 text-left gap-4 ">
