@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- <link href="./output.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="./src/output.css">
+  <style>
+    .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+  </style>
 </head>
 <body>
     <div class="w-auto bg-black flex justify-center items-center flex-col p-8 gap-1.5">
@@ -39,46 +55,52 @@
         <a class="next" onclick="plusSlides(1)">❯</a>
         
     </div>
-    <div>
+    <div class="#">
         <h2 class="text-black text-2xl text-center p-6">Popular Categories</h2>
-        <div class="flex flex-col gap-6 p-4">
-            <div class="flex flex-col shadow-[0px_0px_15px_rgba(0,0,0,0.09)] rounded-3xl px-6 py-8 sm:p-10 sm:pb-6 grid items-center justify-center w-full grid-cols-1 text-left gap-4 ">
+        <div class="flex flex-col gap-6 p-4        max-w-[1000px] relative mx-auto">
+            <div class="flex flex-col shadow-[0px_0px_15px_rgba(0,0,0,0.09)] rounded-3xl px-6 py-8 sm:p-10 sm:pb-6 grid items-center justify-center w-full grid-cols-1 text-left gap-4    hidden">
                 <h3>Cleansers</h3>
                 <img src="src/assets/Foaming Facial Cleanser.jpeg" alt="" class="w-40 p-2">
                 <p>Gentle formulas that remove dirt, oil, and makeup without stripping your skin.</p>
                 <button class="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:border-b-[6px] hover:brightness-110 active:translate-y-[2px] active:brightness-90 active hover:-translate-y-[1px]">Explore shop</button>
             </div>
-            <div class="flex flex-col shadow-[0px_0px_15px_rgba(0,0,0,0.09)]  rounded-3xl px-6 py-8 sm:p-10 sm:pb-6 grid items-center justify-center w-full grid-cols-1 text-left gap-4">
+            <div class="flex flex-col shadow-[0px_0px_15px_rgba(0,0,0,0.09)]  rounded-3xl px-6 py-8 sm:p-10 sm:pb-6 grid items-center justify-center w-full grid-cols-1 text-left gap-4   hidden">
                 <h3>Toners</h3>
                 <img src="src/assets/These Best Glycolic Acid Toners Gently Exfoliate Skin for Glass-Like Shine.jpeg" alt="" class="w-40 p-2">
                 <p>Gentle formulas that remove dirt, oil, and makeup without stripping your skin.</p>
                 <button class="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:border-b-[6px] hover:brightness-110 active:translate-y-[2px] active:brightness-90 active hover:-translate-y-[1px]">Explore shop</button>
             </div>
-            <div class="flex flex-col bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)]  rounded-3xl px-6 py-8 sm:p-10 sm:pb-6 grid items-center justify-center w-full grid-cols-1 text-left gap-4">
+            <div class="flex flex-col bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)]  rounded-3xl px-6 py-8 sm:p-10 sm:pb-6 grid items-center justify-center w-full grid-cols-1 text-left gap-4   hidden">
                 <h3>Body Care</h3>
                 <img src="src/assets/dearcloud Miffy Daily Glow Body Wash – Niacinamide, Cica & Vitamin C – Exfoliating Body Wash & Bath Soap for Women and Men - Candy Apple (16 fl oz).jpeg" alt="" class="w-26 p-2">
                 <p>Nourishing products for smooth, healthy skin from head to toe.</p>
                 <button class="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:border-b-[6px] hover:brightness-110 active:translate-y-[2px] active:brightness-90 active hover:-translate-y-[1px]">Explore shop</button>
             </div>
-            <div class="flex flex-col bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)]  rounded-3xl px-6 py-8 sm:p-10 sm:pb-6 grid items-center justify-center w-full grid-cols-1 text-left gap-4">
+            <div class="flex flex-col bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)]  rounded-3xl px-6 py-8 sm:p-10 sm:pb-6 grid items-center justify-center w-full grid-cols-1 text-left gap-4   hidden">
                 <h3>Serums</h3>
                 <img src="src/assets/Niacinamide 10% + Zinc 1% Oil Control Serum  - The Ordinary _ Sephora.jpeg" alt="" class="w-40 p-2">
                 <p>Concentrated treatments that target acne, dark spots, and uneven tone.</p>
                 <button class="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:border-b-[6px] hover:brightness-110 active:translate-y-[2px] active:brightness-90 active hover:-translate-y-[1px]">Explore shop</button>
             </div>
-            <div class="flex flex-col bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] rounded-3xl px-6 py-8 sm:p-10 sm:pb-6 grid items-center justify-center w-full grid-cols-1 text-left gap-4">
+            <div class="flex flex-col bg-white shadow-[0px_0px_15px_rgba(0,0,0,0.09)] rounded-3xl px-6 py-8 sm:p-10 sm:pb-6 grid items-center justify-center w-full grid-cols-1 text-left gap-4    hidden">
                 <h3>Moisturizers</h3>
                 <img src="src/assets/Nivea Soft Moisturizing Crème Body, Face and Hand Cream Scented - 6_8oz.jpeg" alt="" class="w-38 p-2">
                 <p>Hydration essentials that lock in moisture and strengthen your skin barrier.</p>
                 <button class="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:border-b-[6px] hover:brightness-110 active:translate-y-[2px] active:brightness-90 active hover:-translate-y-[1px]">Explore shop</button>
             </div>
-            <div class="flex flex-col bg-white rounded-3xl px-6 py-8 sm:p-10 sm:pb-6 grid items-center justify-center w-full grid-cols-1 text-left  shadow-[0px_0px_15px_rgba(0,0,0,0.09)] gap-4">
+            <div class="flex flex-col bg-white rounded-3xl px-6 py-8 sm:p-10 sm:pb-6 grid items-center justify-center w-full grid-cols-1 text-left  shadow-[0px_0px_15px_rgba(0,0,0,0.09)] gap-4    hidden">
                 <h3>Sunscreens</h3>
                 <img src="src/assets/8 Invisible Facial Sunscreens to Try.jpeg" alt="" class="w-40 p-2">
                 <p>Daily protection against UV damage, hyperpigmentation, and premature aging.</p>
                 <button class="cursor-pointer transition-all bg-blue-500 text-white px-6 py-2 rounded-lg border-blue-600 border-b-[4px] hover:border-b-[6px] hover:brightness-110 active:translate-y-[2px] active:brightness-90 active hover:-translate-y-[1px]">Explore shop</button>
             </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
         </div>
+
     </div>
     <div class="flex flex-col gap-4 mb-28 justify-center items-center">
         <h2 class="text-3xl text-left p-6">Best Sellers this week</h2>
