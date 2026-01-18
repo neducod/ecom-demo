@@ -229,6 +229,9 @@
   .mt-\[117px\] {
     margin-top: 117px;
   }
+  .mr-4 {
+    margin-right: calc(var(--spacing) * 4);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -237,6 +240,9 @@
   }
   .mb-28 {
     margin-bottom: calc(var(--spacing) * 28);
+  }
+  .ml-4 {
+    margin-left: calc(var(--spacing) * 4);
   }
   .block {
     display: block;
