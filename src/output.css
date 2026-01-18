@@ -352,6 +352,9 @@
   .gap-8 {
     gap: calc(var(--spacing) * 8);
   }
+  .gap-12 {
+    gap: calc(var(--spacing) * 12);
+  }
   .gap-20 {
     gap: calc(var(--spacing) * 20);
   }
@@ -680,6 +683,41 @@
     &:active {
       --tw-brightness: brightness(90%);
       filter: var(--tw-blur,) var(--tw-brightness,) var(--tw-contrast,) var(--tw-grayscale,) var(--tw-hue-rotate,) var(--tw-invert,) var(--tw-saturate,) var(--tw-sepia,) var(--tw-drop-shadow,);
+    }
+  }
+  .sm\:h-3 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 3);
+    }
+  }
+  .sm\:h-20 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 20);
+    }
+  }
+  .sm\:w-0 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 0);
+    }
+  }
+  .sm\:w-20 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 20);
+    }
+  }
+  .sm\:w-26 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 26);
+    }
+  }
+  .sm\:w-30 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 30);
+    }
+  }
+  .sm\:w-46 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 46);
     }
   }
   .sm\:flex-row {
