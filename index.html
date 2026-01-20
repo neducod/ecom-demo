@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <nav class="flex flex-col gap-2 p-2">
-        <div class="flex flex-row gap-20 justify-center items-center">
-            <div class="flex flex-row gap-6 justify-center items-center">
-                <img src="src/assets/icons8-menu-24.png" alt="hamburger icon" class="w-8 h-8">
-                <p class="text-pink-200 mr-4">Glowé</p>
+    <nav class="flex flex-col sm:flex-row gap-2 sm:gap-60 p-2 sm:p-4">
+        <div class="flex flex-row gap-20 sm:gap-40 justify-center items-center">
+            <div class="flex flex-row gap-6 sm:gap-10 sm:pl-20 justify-center items-center">
+                <img src="src/assets/icons8-menu-24.png" alt="hamburger icon" class="w-8 h-8 sm:hidden">
+                <p class="text-pink-200 sm:text-pink-500 mr-4 sm:text-3xl">Glowé</p>
             </div>
             <div class="flex flex-row gap-2 justify-center items-center">
                 <p>Signin</p>
@@ -24,24 +24,28 @@
             <button class="cursor-pointer transition-all bg-blue-500 text-white px-2 py-1 rounded-lg border-blue-600 border-b-[4px] hover:border-b-[6px] hover:brightness-110 active:translate-y-[2px] active:brightness-90 active hover:-translate-y-[1px]" type="submit" >Search</button>
         </div>
     </nav>
-    <div class="flex flex-row gap-64 p-4 bg-black">
+    <div class="flex flex-row gap-64 p-2 bg-black">
         <div class="flex flex-row gap-6 pl-6">
-            <button class="text-white">All</button>
-            <ul class="flex flex-row gap-6">
-                <li><a href="#" class="text-white">Glowe Bazaar</a></li>
-                <li><a href="#" class="text-white">Today's Deals</a></li>
-                <li class="text-white">Watch Video</li>
-                <li class="text-white">Registry</li>
-                <li class="text-white">Gift Cards</li>
-                <li class="text-white">Customer Service</li>
-                <li class="text-white">Sell</li>
+            <div>
+                <!-- <img src="src/assets/icons8-menu-24.png" alt="hamburger icon" class="w-8 h-8"> -->
+                <!-- <button class="text-white   text-sm border border-solid border-white p-2"> All</button> -->
+            </div>
+            <ul class="flex flex-row justify-center items-center gap-6">
+                <button class="text-white text-sm border border-solid border-white p-2"> All</button>
+                <li><a href="#" class="text-white text-sm hover:border hover:border-solid border-white hover:p-2">Glowe Bazaar</a></li>
+                <li><a href="#" class="text-white text-sm  hover:border hover:border-solid border-white hover:p-2">Today's Deals</a></li>
+                <li class="text-white text-sm hover:border hover:border-solid border-white hover:p-2">Watch Video</li>
+                <li class="text-white text-sm hover:border hover:border-solid border-white hover:p-2">Registry</li>
+                <li class="text-white text-sm hover:border hover:border-solid border-white hover:p-2">Gift Cards</li>
+                <li class="text-white text-sm hover:border hover:border-solid border-white hover:p-2">Customer Service</li>
+                <li class="text-white text-sm hover:border hover:border-solid border-white hover:p-2">Sell</li>
             </ul>
         </div>
         <div>
-            <p class="text-white">Everything up to 80% free on the Glowe App</p>
+            <p class="text-white text-sm">Everything up to 80% off on the Glowe App</p>
         </div>
     </div>
-    <div class="flex flex-col gap-4 p-4 bg-blue-300" style="background-color: rgb(244, 172, 233);">
+    <div class="flex flex-col gap-4 p-4 bg-blue-300 sm:hidden" style="background-color: rgb(244, 172, 233);">
         <div class="flex flex-row gap-2">
             <img src="src/assets/icons8-location-50.png" alt="location icon" class="w-8 h-8">
             <p>Deliver to Nigeria</p>
