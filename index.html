@@ -7,21 +7,52 @@
   <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <nav class="flex flex-col sm:flex-row gap-2 sm:gap-60 p-2 sm:p-4">
-        <div class="flex flex-row gap-20 sm:gap-40 justify-center items-center">
+    <nav class="flex flex-col sm:flex-row gap-2 sm:gap-20 p-2 sm:p-4">
+        <div class="flex flex-row gap-20 sm:gap-8 justify-center items-center">
             <div class="flex flex-row gap-6 sm:gap-10 sm:pl-20 justify-center items-center">
                 <img src="src/assets/icons8-menu-24.png" alt="hamburger icon" class="w-8 h-8 sm:hidden">
-                <p class="text-pink-200 sm:text-pink-500 mr-4 sm:text-3xl">Glowé</p>
+                <p class="text-pink-200 sm:text-pink-500 mr-4 sm:mr-2 sm:text-3xl">Glowé</p>
             </div>
-            <div class="flex flex-row gap-2 justify-center items-center">
+            <div class="hidden sm:block">
+                <p class="text-gray-500 text-sm">Deliver to<p>
+                <div class="flex flex-row">
+                    <img src="src/assets/icons8-location-50.png" alt="location icon" class="w-6">
+                    <p class="text-green-950 text-sm font-bold">Nigeria</p>
+                </div>
+            </div>
+            <div class="flex flex-row gap-2 justify-center items-center sm:hidden">
                 <p>Signin</p>
                 <img src="src/assets/icons8-user-50.png" alt="user icon" class="w-8 h-8">
                 <img src="src/assets/icons8-cart-50.png" alt="cart icon" class="w-8 h-8">
             </div>
         </div>
-        <div class="flex justify-center items-center flex-row">
+        <div class="flex justify-center items-center flex-row sm:w-96">
             <input type="search" name="" id="" placeholder="Search Glowe" class="text-sm custom-input w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm transition duration-300 ease-in-out transform focus:-translate-y-1 focus:outline-blue-300 hover:shadow-lg hover:border-blue-300 bg-gray-100"   >
             <button class="cursor-pointer transition-all bg-blue-500 text-white px-2 py-1 rounded-lg border-blue-600 border-b-[4px] hover:border-b-[6px] hover:brightness-110 active:translate-y-[2px] active:brightness-90 active hover:-translate-y-[1px]" type="submit" >Search</button>
+        </div>
+        <!-- <div class="hidden sm:block">
+            <div class="flex flex-col hover:border hover:border-solid border-black">
+                <p class="text-sm">Returns</p>
+                <p class="text-sm font-bold">& Orders</p>
+            </div>
+        </div> -->
+        <!-- <div class="hidden sm:block">
+            <img src="src/assets/icons8-cart-50.png" alt="cart icon" class="w-8 h-8">
+        </div> -->
+        <div class="hidden sm:block">
+            <div class="flex flex-col hover:border hover:border-solid border-black">
+                <p class="text-sm text-gray-900">Hello, signin</p>
+                <p class="text-sm font-bold">Account</p>
+            </div>
+        </div>
+        <div class="hidden sm:block">
+            <div class="flex flex-col hover:border hover:border-solid border-black">
+                <p class="text-sm">Returns</p>
+                <p class="text-sm font-bold">& Orders</p>
+            </div>
+        </div>
+        <div class="hidden sm:block">
+            <img src="src/assets/icons8-cart-50.png" alt="cart icon" class="w-8 h-8">
         </div>
     </nav>
     <div class="flex flex-row gap-64 p-2 bg-black">
