@@ -906,6 +906,21 @@
       gap: calc(var(--spacing) * 28);
     }
   }
+  .sm\:gap-30 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 30);
+    }
+  }
+  .sm\:gap-36 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 36);
+    }
+  }
+  .sm\:gap-38 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 38);
+    }
+  }
   .sm\:gap-40 {
     @media (width >= 40rem) {
       gap: calc(var(--spacing) * 40);
