@@ -4,6 +4,7 @@ Search feature
 Menu toggle on desktop and mobile view
 Pop up cancel buttons
 Pop up unavailable message
+Desktop navbar
 Responsiveness on desktop and tablets
 Shop section
 Footer
