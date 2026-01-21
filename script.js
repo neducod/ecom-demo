@@ -38,7 +38,7 @@ AOS.init({
 
 
 
-const dismissBtn = document.getElementById("dismissBtn");
+// const dismissBtn = document.getElementById("dismissBtn");
 const changeBtn = document.getElementById("chnageBtn");
 
 // function locateDiv(){
@@ -49,7 +49,23 @@ document.getElementById("dismissBtn").addEventListener("click", locateDiv);
 
 function locateDiv(){
   style.display = "none"
-  // document.getElementById(id).style.property= new style
   document.getElementById("p2").style.color = "blue";
 }
 document.getElementById("dismissBtn").style.display = "none"
+
+
+
+
+  // document.getElementById(id).style.property= new style
+  // document.getElementById(id).style.property= new style
+
+
+dismissBtn.addEventListener("click", function hideDiv (){
+
+  const dismissBtn = document.getElementById ("dismissBtn")
+  // const divToHide = document.getElementById('myDiv');
+            
+            // Set the CSS display property to 'none' to hide it
+            dismissBtn.style.display = 'none';
+
+})
