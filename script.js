@@ -33,3 +33,23 @@ AOS.init({
   easing: 'ease-in-sine',
   delay: 100,
 });
+
+
+
+
+
+const dismissBtn = document.getElementById("dismissBtn");
+const changeBtn = document.getElementById("chnageBtn");
+
+// function locateDiv(){
+//   if 
+// }
+
+document.getElementById("dismissBtn").addEventListener("click", locateDiv);
+
+function locateDiv(){
+  style.display = "none"
+  // document.getElementById(id).style.property= new style
+  document.getElementById("p2").style.color = "blue";
+}
+document.getElementById("dismissBtn").style.display = "none"
