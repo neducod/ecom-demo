@@ -56,7 +56,7 @@ function locateDiv(){
 document.getElementById("dismissBtn").style.display = "none"
 
 
-
+/*
 dismissBtn.addEventListener("click", function hideDiv (){
 
   const dismissBtn = document.getElementById ("dismissBtn")
@@ -64,7 +64,7 @@ dismissBtn.addEventListener("click", function hideDiv (){
 
 })
 
-
+*/
 
 
 /*
@@ -84,3 +84,14 @@ divdismissBtn.addEventListener("click", function () {
   divlocationBtn.style.display = "none";
 });
 
+
+
+
+
+
+const box = document.getElementById("box");
+const dismissBtn = document.getElementById("dismissBtn");
+
+dismissBtn.addEventListener("click", () => {
+  box.style.display = "none";
+});
