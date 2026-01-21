@@ -1,3 +1,4 @@
+/*
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -25,7 +26,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-
+*/
+/*
 AOS.init();
 AOS.init({
   offset: 200,
@@ -34,7 +36,7 @@ AOS.init({
   delay: 100,
 });
 
-
+*/
 
 
 
@@ -55,17 +57,21 @@ document.getElementById("dismissBtn").style.display = "none"
 
 
 
-
-  // document.getElementById(id).style.property= new style
-  // document.getElementById(id).style.property= new style
-
-
 dismissBtn.addEventListener("click", function hideDiv (){
 
   const dismissBtn = document.getElementById ("dismissBtn")
-  // const divToHide = document.getElementById('myDiv');
-            
-            // Set the CSS display property to 'none' to hide it
             dismissBtn.style.display = 'none';
 
 })
+
+
+
+
+
+const divlocationBtn = document.getElementById("divLocate");
+const divdismissBtn = document.getElementById("dismissBtn");
+
+function divMethod(){
+  divlocationBtn.style.display = "none"
+}
+divdismissBtn.addEventListener("click", divMethod);
