@@ -67,7 +67,7 @@ dismissBtn.addEventListener("click", function hideDiv (){
 
 
 
-
+/*
 const divlocationBtn = document.getElementById("divLocate");
 const divdismissBtn = document.getElementById("dismissBtn");
 
@@ -75,3 +75,12 @@ function divMethod(){
   divlocationBtn.style.display = "none"
 }
 divdismissBtn.addEventListener("click", divMethod);
+*/
+
+const divlocationBtn = document.getElementById("divLocate");
+const divdismissBtn = document.getElementById("dismissBtn");
+
+divdismissBtn.addEventListener("click", function () {
+  divlocationBtn.style.display = "none";
+});
+
